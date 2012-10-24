@@ -14,4 +14,9 @@ public class HelloController {
     model.addAttribute("message", "Spring 3 MVC Hello World changed in branch1");
     return "hello";
   }
+
+
+  public void printWelcome2(String model){
+	System.out.println("Only for testing");
+ }
 }
