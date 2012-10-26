@@ -7,9 +7,10 @@
   <version>1.0-SNAPSHOT</version>
   <name>pch Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  
-  <properties>
+
+	<properties>
 		<spring.version>3.1.2.RELEASE</spring.version>
+		<targetJdk>1.6</targetJdk>
 	</properties>
 	
   <dependencies>
