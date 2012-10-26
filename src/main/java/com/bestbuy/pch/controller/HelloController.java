@@ -12,9 +12,7 @@ public class HelloController {
 int count = 0;
   @RequestMapping(method = RequestMethod.GET)
   public String printWelcome(ModelMap model) {
-	System.out.println(++count);
     model.addAttribute("message", "Spring 3 MVC Hello World changed in branch1");
-	System.out.println("Adding PMD");
 	return "hello";
   }
 }
