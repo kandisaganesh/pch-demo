@@ -9,9 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/welcome")
 public class HelloController {
 
-int count = 0;
   @RequestMapping(method = RequestMethod.GET)
-  public String printWelcome(ModelMap model) {
+  public String printWelcome(final ModelMap model) {
     model.addAttribute("message", "Spring 3 MVC Hello World changed in branch1");
 	return "hello";
   }
